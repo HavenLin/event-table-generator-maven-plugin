@@ -1,0 +1,1 @@
+# event-table-generator-maven-plugin
