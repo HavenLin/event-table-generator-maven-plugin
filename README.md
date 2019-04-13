@@ -6,18 +6,18 @@ This plugin generates the markdown table based on the project‘s event definiti
 
 #### Prerequisites
 
-* Java 1.7+
+* Java 1.8+
 * Maven 3.3+
 
 #### Sample
 
 ~~~~
 <plugin>
-    <groupId>com.expedia.lodging</groupId>
+    <groupId>com.github.halin</groupId>
     <artifactId>event-table-generator-maven-plugin</artifactId>
     <version>1.0</version>
     <configuration>
-        <eventClass>com.expedia.www.lodging.bmcbot.event.SystemEvent</eventClass>
+        <eventClass>{fullClassPath}</eventClass>
         <idGetter>getId</idGetter>
         <messageGetter>getDescription</messageGetter>
         <outputPath>EVENTMESSAGE.md</outputPath>
@@ -32,7 +32,3 @@ This plugin generates the markdown table based on the project‘s event definiti
     </executions>
 </plugin>
 ~~~~
- 
-#### More detail
-
-[Use Guide](https://confluence.expedia.biz/display/~halin/Event+Table+Generator+Maven+Plugin)
